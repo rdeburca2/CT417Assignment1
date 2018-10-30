@@ -15,11 +15,11 @@ import java.util.List;
 public class Module {
     
     private String moduleName;
-    private int moduleID;
+    private String moduleID;
     private List<Student> students;
     
     
-    public Module(String moduleName, int moduleID, List<Student> students) {
+    public Module(String moduleName, String moduleID, List<Student> students) {
         setModuleName(moduleName);
         setModuleID(moduleID);
         setStudents(students);
@@ -29,7 +29,7 @@ public class Module {
         this.moduleName = moduleName;
     }
 
-    public void setModuleID(int moduleID) {
+    public void setModuleID(String moduleID) {
         this.moduleID = moduleID;
     }
 
@@ -41,7 +41,7 @@ public class Module {
         return moduleName;
     }
 
-    public int getModuleID() {
+    public String getModuleID() {
         return moduleID;
     }
 
