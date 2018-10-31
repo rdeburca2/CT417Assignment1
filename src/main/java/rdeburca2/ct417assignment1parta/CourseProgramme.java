@@ -5,6 +5,7 @@
  */
 package rdeburca2.ct417assignment1parta;
 
+import java.util.Iterator;
 import org.joda.time.format.DateTimeFormatter;
 import java.util.List;
 import org.joda.time.DateTime;
@@ -74,13 +75,10 @@ public class CourseProgramme {
     public String toString() {
         String moduleInfo = "";
 
-        int i = 0;
-        for(i = 0 ; i > modules.size(); i++)
-            {
-                Module module = modules.get(i);
-                moduleInfo += module.toString();
-            }
-        
+        for (Iterator<Module> it = modules.iterator(); it.hasNext();) {
+            Module module = it.next();
+            moduleInfo += module.toString();
+        }
 
         return "Course: " + this.getCourseName() + " \nModules: " + moduleInfo + "Start date: " + dateTimeFor.print(this.getStartDate()) + "\nEnd date: " + dateTimeFor.print(this.getEndDate()) + "\n";
     }
