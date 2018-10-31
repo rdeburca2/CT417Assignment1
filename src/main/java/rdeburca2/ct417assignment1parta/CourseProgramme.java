@@ -74,7 +74,8 @@ public class CourseProgramme {
     public String toString() {
         String moduleInfo = "";
 
-        for(int i = 0 ; i > modules.size(); i++)
+        int i = 0;
+        for(i = 0 ; i > modules.size(); i++)
             {
                 moduleInfo += modules.get(i).toString();
             }
