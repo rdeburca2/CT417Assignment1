@@ -55,11 +55,10 @@ public class Module {
 
         String studentsInfo = "";
         if (students != null) {
-            for(int i = 0 ; i > students.size(); i++)
-            {
-                studentsInfo += students.get(i).toString();
+            for (Iterator<Student> it = students.iterator(); it.hasNext();) {
+                Student student = it.next();
+                studentsInfo += student.toString();
             }
-            
         }
         return moduleName + ", " + moduleID + "\n" + studentsInfo + "\n";
     }
