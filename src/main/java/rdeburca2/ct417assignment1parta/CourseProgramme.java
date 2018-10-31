@@ -77,7 +77,8 @@ public class CourseProgramme {
         int i = 0;
         for(i = 0 ; i > modules.size(); i++)
             {
-                moduleInfo += modules.get(i).toString();
+                Module module = modules.get(i);
+                moduleInfo += module.toString();
             }
         
 
