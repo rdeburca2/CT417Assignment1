@@ -74,7 +74,7 @@ public class CourseProgramme {
     @Override
     public String toString() {
         String moduleInfo = "";
-
+//Comments test for CI change
         for (Iterator<Module> it = modules.iterator(); it.hasNext();) {
             Module module = it.next();
             moduleInfo += module.toString();
